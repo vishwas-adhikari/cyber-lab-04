@@ -1,0 +1,17 @@
+{
+    "name": "CyberLab-Environment",
+    "build": { "dockerfile": "../Dockerfile" },
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": ["ms-azuretools.vscode-docker"]
+        }
+    },
+    "portsAttributes": {
+        "80": {
+            "label": "Lab-Portal",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    "postCreateCommand": "python3 app.py"
+}
